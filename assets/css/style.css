@@ -23,12 +23,15 @@ body {
     background-color: var(--bg-clr);
 }
 
+*,*::before,*::after{
+    box-sizing: border-box;
+}
 p,
 h1,
 h2,
 h3,
 header,
-section,ul {
+section,ul,button {
     margin: 0;
     padding: 0;
 }
@@ -46,6 +49,10 @@ button{
     background-color: transparent;
 }
 
+img{
+    width: 100%;
+    height: auto;
+}
 
 /* General style */
 
@@ -83,6 +90,89 @@ button{
     top: 1rem;
     right: 1rem;
     font-size: 1.5rem;
+}
+
+
+/* home */
+.home .container{
+    margin-top: 4rem;
+    color: white;
+    position: relative;
+}
+.home__img{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100vh;
+    z-index: -1;
+}
+
+.home__subtitle{
+    font-weight: 600;
+    display: block;
+    margin-bottom: 1rem;
+}
+.home__title{
+    font-weight: 500;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.home__button{
+    font-size: 1.3rem;
+    color: white;
+    background: hsl(190deg 64% 22%);
+    padding: 1em;
+    margin-bottom: 7rem;
+}
+
+.socialmedia__list{
+    display: flex;
+}
+.socialmedia__list li{
+    margin-right: 2rem;
+    font-size: 1.2rem;
+}
+
+.home__card{
+    background-color: hsl(190deg 64% 22%);
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 3rem;
+}
+.home__card .card__title{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.card__content{
+    margin-right: 1rem;
+}
+.home__card_img__div{
+    overflow: hidden;
+}
+.card__img{
+    width: 200px;
+    height: 100px;
+    transition: 0.3s;
+}
+
+.card__img:hover{
+   transform: scale(1.1);
+}
+
+.card__button{
+    color:var(--text-clr);
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+
+
 }
 /* media queries */
 
