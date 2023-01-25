@@ -11,6 +11,7 @@ const closeButton=document.querySelector('#nav-close')
 const menuHandler=()=>{
     let navbar=document.querySelector('.nav')
     navbar.classList.toggle('show')
+    document.body.classList.toggle('no-scroll')
 }
 
 menuButton.addEventListener('click',menuHandler)

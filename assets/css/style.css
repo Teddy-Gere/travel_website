@@ -63,6 +63,13 @@ img {
 
 /* General style */
 
+.no-scroll{
+    position: fixed;
+    top:0;
+    left: 0;
+    height: 100vh;
+}
+
 .container {
     margin-inline: 8rem;
 }
@@ -374,6 +381,7 @@ img {
         width: 68%;
         background-color: var(--bg-clr);
         padding-top: var(--header--height);
+        z-index: 100;
     }
 
     .nav.show {
