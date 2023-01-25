@@ -345,8 +345,55 @@ img {
         right: 2rem;
     }
 
-    /* More features */
+    /* home */
+    .home .container{
+        margin-top: 1rem;
+    }
+    .home__title{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+.home__button{
+    font-size: 1rem;
+}
 
+.home__card{
+    width: 150px;
+    bottom: 8rem;
+    right: 0;
+    padding: 0.5rem 0.5rem;
+}
+.card__content{
+    margin-right: 0.5rem;
+}
+
+.socialmedia__list{
+    position: absolute;
+    bottom: 5.5rem;
+    left: 0;
+}
+
+.home__card .card__title{
+    font-size: 0.7rem;
+}
+.card__button{
+    margin-top: 0.5rem;
+    font-size: 0.7rem;
+}
+
+.card__img {
+    width: 100px;
+    height: 50px;
+}
+
+.socialmedia__list li{
+    font-size: 1rem;
+}
+
+    /* More features */
+    .more__features{
+        margin-top: -9rem;
+    }
     .more__features .container {
         display: flex;
         row-gap: 2rem;
