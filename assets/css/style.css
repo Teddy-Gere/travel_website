@@ -245,6 +245,53 @@ img {
     padding: 1em;
 }
 
+
+/* discover */
+.discover__cards{
+    display: flex;
+    gap:1rem;
+}
+
+.swiper {
+    width: 700px;
+  }
+
+  .discover__card {
+   position: relative;
+    width: 237px;
+    overflow: hidden;
+
+}
+
+.discover__data{
+    position: absolute;
+    bottom: 2rem;
+    left: 1.5rem;
+    width: 100%;
+    color: white;
+}
+
+
+
+.discovery__card__header{
+    font-size: 2.2rem;
+    color: white;
+}
+
+.discover__card img{
+    transition: 0.3s;
+}
+
+.discover__card:hover img{
+    transform: scale(1.1);
+}
+
+.discover__header{
+    text-align: center;
+    font-size: 1.7rem;
+    margin-block: 2rem;
+}
+
 /* media queries */
 
 @media screen and (max-width:400px) {
@@ -323,5 +370,12 @@ img {
 .home__card_ig__div:last-child img {
     width: 180px;
 }
+/* more places */
+.swiper{
+    width: 300px;
+}
 
+.swiper-slide{
+    width: 200px;
+}
 }

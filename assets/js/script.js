@@ -15,3 +15,19 @@ const menuHandler=()=>{
 
 menuButton.addEventListener('click',menuHandler)
 closeButton.addEventListener('click',menuHandler)
+
+
+
+
+/*==================== SWIPER DISCOVER ====================*/
+let swiper = new Swiper(".swiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    loop: true,
+    spaceBetween: 32,
+    coverflowEffect: {
+        rotate: 0,
+    },
+})
