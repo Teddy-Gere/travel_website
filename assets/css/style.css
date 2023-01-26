@@ -3,7 +3,7 @@
 
     --header--height: 4rem;
 
-    --tex-clr: black;
+    --tex-clr:  hsl(190deg 64% 22%);
     --bg-clr: white;
 }
 
@@ -82,6 +82,23 @@ img {
     justify-content: space-between;
     align-items: center;
     height: var(--header--height);
+    color: white;
+}
+.header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+/* Change background header */
+.scroll-header {
+    background-color: var(--bg-clr);
+    box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
+  }
+
+.scroll-header .container{
+    color:var(--text-clr);
 }
 
 .nav .nav__items {
