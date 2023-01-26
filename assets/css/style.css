@@ -732,4 +732,22 @@ outline: none;
     .place__card img {
         height: 230px;
     }
+
+    /* subscribe */
+    .subscribe .container{
+        padding: 2rem 1rem;
+        margin: unset;
+    }
+    .subscribe__header{
+        font-size: 1.5rem;
+    }
+    .subscribe__text{
+        font-size: 1rem;
+    }
+    .subscribe__input{
+        width: 100%;
+    }
+    .subscribe__input input{
+        width: 47%;
+    }
 }
