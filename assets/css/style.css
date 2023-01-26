@@ -3,7 +3,7 @@
 
     --header--height: 4rem;
 
-    --tex-clr:  hsl(190deg 64% 22%);
+    --text-clr:  hsl(190deg 64% 22%);
     --bg-clr: white;
 }
 
@@ -58,6 +58,11 @@ button {
 img {
     /* max-width: 100%; */
     width: 100%;
+    height: auto;
+}
+
+video{
+    max-width: 100%;
     height: auto;
 }
 
@@ -370,6 +375,45 @@ img {
     top: 3rem;
 }
 
+
+/* tour  */
+
+.tour .container{
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.tour__header{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.tour__text{
+    width: 44%;
+    margin-inline: auto;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.tour__video{
+    width: 60%;
+    margin-inline: auto;
+    position: relative;
+}
+
+.video__button{
+    position: absolute;
+    bottom:-1rem;
+    right: 1rem;
+    background:hsl(190deg 64% 22%);
+    padding: 1em 2em;
+    /* transform: translate(50%,50%); */
+}
+
+.video__button-icon{
+    font-size: 1.5rem;
+    color:white;
+}
 /* media queries */
 
 @media screen and (max-width:400px) {
@@ -522,5 +566,22 @@ img {
         width: 80px;
         margin-left: -48px;
         top: 2rem;
+    }
+
+    /* tours */
+    .tour__header{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+
+    }
+    .tour__text{
+        font-size: 1rem;
+        width: 100%;
+    }
+    .tour__video{
+        width: 100%;
+    }
+    .video__button-icon{
+        font-size: 1rem;
     }
 }
