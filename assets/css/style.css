@@ -131,6 +131,10 @@ video{
 
 
 /* home */
+.home {
+    margin-top: var(--header--height);
+}
+
 .home .container {
     margin-top: 4rem;
     color: white;
@@ -212,7 +216,7 @@ video{
 }
 
 .card__button {
-    color: var(--text-clr);
+    color: white;
     display: flex;
     align-items: center;
     margin-top: 1rem;
@@ -414,6 +418,83 @@ video{
     font-size: 1.5rem;
     color:white;
 }
+
+
+/* places */
+
+.places{
+    margin-top:10rem;
+}
+
+.places___header{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.places__cards{
+    display: grid;
+    grid-template-columns: repeat(3,max-content);
+    gap: 3rem 2rem;
+    justify-content: center;
+}
+
+.place__card{
+    position: relative;
+    height: 263px;
+}
+
+.place__review{
+    width: fit-content;
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.place__info {
+    position: absolute;
+    bottom: 2rem;
+    left: 1rem;
+    color: white;
+}
+.info__header{
+    margin-bottom: 0.3rem;
+}
+.place__price{
+    display: block;
+    margin-top: 1.5rem;
+}
+
+.place__button{
+    padding: 1em;
+    position: absolute;
+    background: var(--text-clr);
+    bottom: 0;
+    right: 0;
+}
+
+.place__button .ri-arrow-right-line{
+    font-size: 1.1rem;
+    color: white;
+
+}
+
+.place__card img{
+    height: 263px;
+    transition: 0.3s;
+}
+
+.place__card{
+    overflow: hidden;
+}
+.place__card:hover img{
+    transform: scale(1.1);
+}
 /* media queries */
 
 @media screen and (max-width:400px) {
@@ -484,7 +565,7 @@ video{
 
     .home__card {
         width: 150px;
-        bottom: 8rem;
+        bottom: 6rem;
         right: 0;
         padding: 0.5rem 0.5rem;
     }
@@ -495,7 +576,7 @@ video{
 
     .socialmedia__list {
         position: absolute;
-        bottom: 5.5rem;
+        bottom: 5rem;
         left: 0;
     }
 
@@ -583,5 +664,13 @@ video{
     }
     .video__button-icon{
         font-size: 1rem;
+    }
+
+    /* places */
+     .places__cards{
+        grid-template-columns: max-content;
+     }
+    .place__card, .place__card img{
+        height: 230px;
     }
 }
