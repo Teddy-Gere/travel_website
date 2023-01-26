@@ -3,7 +3,7 @@
 
     --header--height: 4rem;
 
-    --text-clr:  hsl(190deg 64% 22%);
+    --text-clr: hsl(190deg 64% 22%);
     --bg-clr: white;
 }
 
@@ -61,16 +61,16 @@ img {
     height: auto;
 }
 
-video{
+video {
     max-width: 100%;
     height: auto;
 }
 
 /* General style */
 
-.no-scroll{
+.no-scroll {
     position: fixed;
-    top:0;
+    top: 0;
     left: 0;
     height: 100vh;
 }
@@ -89,21 +89,23 @@ video{
     height: var(--header--height);
     color: white;
 }
-.header{
+
+.header {
     position: fixed;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     z-index: 2;
 }
+
 /* Change background header */
 .scroll-header {
     background-color: var(--bg-clr);
     box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
-  }
+}
 
-.scroll-header .container{
-    color:var(--text-clr);
+.scroll-header .container {
+    color: var(--text-clr);
 }
 
 .nav .nav__items {
@@ -382,68 +384,68 @@ video{
 
 /* tour  */
 
-.tour .container{
+.tour .container {
     margin-top: 10rem;
     text-align: center;
 }
 
-.tour__header{
+.tour__header {
     font-size: 2rem;
     margin-bottom: 2rem;
 }
 
-.tour__text{
+.tour__text {
     width: 44%;
     margin-inline: auto;
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
 
-.tour__video{
+.tour__video {
     width: 60%;
     margin-inline: auto;
     position: relative;
 }
 
-.video__button{
+.video__button {
     position: absolute;
-    bottom:-1rem;
+    bottom: -1rem;
     right: 1rem;
-    background:hsl(190deg 64% 22%);
+    background: hsl(190deg 64% 22%);
     padding: 1em 2em;
     /* transform: translate(50%,50%); */
 }
 
-.video__button-icon{
+.video__button-icon {
     font-size: 1.5rem;
-    color:white;
+    color: white;
 }
 
 
 /* places */
 
-.places{
-    margin-top:10rem;
+.places {
+    margin-top: 10rem;
 }
 
-.places___header{
+.places___header {
     text-align: center;
     margin-bottom: 5rem;
 }
 
-.places__cards{
+.places__cards {
     display: grid;
-    grid-template-columns: repeat(3,max-content);
+    grid-template-columns: repeat(3, max-content);
     gap: 3rem 2rem;
     justify-content: center;
 }
 
-.place__card{
+.place__card {
     position: relative;
     height: 263px;
 }
 
-.place__review{
+.place__review {
     width: fit-content;
     position: absolute;
     top: 1.5rem;
@@ -462,15 +464,17 @@ video{
     left: 1rem;
     color: white;
 }
-.info__header{
+
+.info__header {
     margin-bottom: 0.3rem;
 }
-.place__price{
+
+.place__price {
     display: block;
     margin-top: 1.5rem;
 }
 
-.place__button{
+.place__button {
     padding: 1em;
     position: absolute;
     background: var(--text-clr);
@@ -478,22 +482,72 @@ video{
     right: 0;
 }
 
-.place__button .ri-arrow-right-line{
+.place__button .ri-arrow-right-line {
     font-size: 1.1rem;
     color: white;
 
 }
 
-.place__card img{
+.place__card img {
     height: 263px;
     transition: 0.3s;
 }
 
-.place__card{
+.place__card {
     overflow: hidden;
 }
-.place__card:hover img{
+
+.place__card:hover img {
     transform: scale(1.1);
+}
+
+
+/* subscribe */
+.subscribe {
+    margin-top: 3rem;
+}
+
+.subscribe .container {
+    background-color: var(--text-clr);
+    color: white;
+    text-align: center;
+    padding: 3rem;
+}
+
+.subscribe__header{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.subscribe__text{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.subscribe__input{
+    position: relative;
+    background-color: white;
+    width: 61%;
+    margin-inline: auto;
+    margin-top: 2rem;
+}
+
+.subscribe__input input{
+    border: none;
+    padding: 2em;
+    width: 70%;
+}
+
+.subscribe__input input:focus-visible {
+outline: none;
+}
+
+.subscribe__input button{
+    background-color: var(--text-clr);
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
 }
 /* media queries */
 
@@ -650,27 +704,32 @@ video{
     }
 
     /* tours */
-    .tour__header{
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    .tour__header {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
 
     }
-    .tour__text{
+
+    .tour__text {
         font-size: 1rem;
         width: 100%;
     }
-    .tour__video{
+
+    .tour__video {
         width: 100%;
     }
-    .video__button-icon{
+
+    .video__button-icon {
         font-size: 1rem;
     }
 
     /* places */
-     .places__cards{
+    .places__cards {
         grid-template-columns: max-content;
-     }
-    .place__card, .place__card img{
+    }
+
+    .place__card,
+    .place__card img {
         height: 230px;
     }
 }
