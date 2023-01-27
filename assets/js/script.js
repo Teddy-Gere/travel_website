@@ -109,3 +109,39 @@ window.addEventListener('scroll',()=>{
         scrollTop.classList.remove('show')
     }
 })
+
+
+// Scroll Reveal
+
+const sReveal=ScrollReveal({
+    distance:'60px',
+    duration:2800
+})
+
+sReveal.reveal(`.home__data , .socialmedia__list , .home__card,
+                 .discover__cards, 
+                 .experience__list li, .experience__overlay,
+                 .place__card,
+                 .sponsor__img,
+                 .contactus__item, .copyright__text, .copyright__info
+
+`,{
+    origin: 'top',
+    interval: 100
+})
+
+sReveal.reveal(`.more__content,
+.tour__text,
+.subscribe__text
+`,{
+    origin: 'left',
+    interval: 100,
+})
+
+sReveal.reveal(`.home__card_ig__div,
+ .tour__video,
+ .subscribe__input
+`,{
+    origin: 'right',
+    interval: 100,
+})
