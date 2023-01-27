@@ -95,3 +95,17 @@ function scrollActive(){
     })
 }
 window.addEventListener('scroll', scrollActive)
+
+
+// scroll to the top
+
+const scrollTop=document.querySelector(".scroll__up")
+
+window.addEventListener('scroll',()=>{
+    const scrollY=window.scrollY
+    if(scrollY>200){
+        scrollTop.classList.add('show')
+    }else{
+        scrollTop.classList.remove('show')
+    }
+})

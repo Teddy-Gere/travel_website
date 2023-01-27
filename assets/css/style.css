@@ -622,6 +622,23 @@ outline: none;
 .copyright__info a:first-child{
     margin-right: 1rem;
 }
+
+
+/* scroll up */
+.scroll__up.show{
+    display: block;
+}
+.scroll__up{
+    display: none;
+    color: var(--bg-clr);
+    background: var(--text-clr);
+    padding: 1em;
+    font-size: .8rem;
+    position: fixed;
+    bottom: 5rem;
+    right: 1rem;
+}
+
 /* media queries */
 
 @media screen and (max-width:400px) {
