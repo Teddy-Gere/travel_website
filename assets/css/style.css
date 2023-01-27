@@ -104,7 +104,17 @@ html{
     width: 100%;
     z-index: 2;
 }
-
+.active-link{
+    position: relative;
+}
+.active-link::before{
+  content: "";
+  position: absolute;
+  bottom:-1.5rem;
+  width: 100%;
+  left: 0;
+  border: 2px solid var(--text-clr);
+}
 /* Change background header */
 .scroll-header {
     background-color: var(--bg-clr);
