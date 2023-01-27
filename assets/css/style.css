@@ -67,6 +67,13 @@ video {
 }
 
 /* General style */
+html{
+    scroll-behavior: smooth;
+}
+
+[id]{
+    scroll-margin-top: 6rem;
+}
 
 .no-scroll {
     position: fixed;
